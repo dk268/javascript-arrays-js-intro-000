@@ -6,6 +6,7 @@ function addElementToBeginningOfArray(originalArray, addedElement){
 
 function destructivelyAddElementToBeginningOfArray(originalArray, addedElement){
   originalArray.unshift(addedElement);
+  return originalArray;
 
 }
 
@@ -29,7 +30,7 @@ function destructivelyRemoveElementFromBeginningOfArray (originalArray) {
 }
 
 function removeElementFromBeginningOfArray (originalArray){
-  var newerArray = originalArray.slice(1)
+  var newerArray = originalArray.slice(0)
   return originalArray;
 }
 
